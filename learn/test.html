@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="textBox">
+
+
+    <!-- Js Events List -->
+     <!-- 
+     mousedown
+     mouseup
+     mousemove
+     mouseenter
+     mouseleave
+     click
+     dblclick
+     contextmenu
+     scroll
+     resize
+     load
+     unload
+     beforeunload
+     hashchange
+     pagehide
+     pageshow
+     popstate
+     storage
+     unload
+     keydown
+     keyup
+     keypress
+     -->
+    <script>
+        // Anonymous Function
+        // const textBox = document.getElementById("textBox");
+        // textBox.addEventListener("mousedown", function (event) {
+        //     console.log(`You pressed "${event.button}".`);
+        // });
+
+
+        let catchNumber = parseInt(prompt("Enter your number"));
+
+        for(i=1; i<=catchNumber; i++){
+            // console.log(i);
+            if(i % 3 === 0 && i % 5 === 0){
+                console.log("Fizz Buzz");
+            } else if(i % 3 === 0){
+                console.log("Fizz");
+            } else if(i % 5 === 0){
+                console.log("Buzz");
+            } else {
+                console.log(i);
+            }
+        }
+        
+        
+    </script>
+</body>
+</html>
