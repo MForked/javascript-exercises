@@ -23,17 +23,18 @@
 
 
         function capitalize(str) {
-            return str.charAt(0).toUpperCase() + str.slice(1);
+            return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
         }
 
         const result = capitalize("HeLLo")  + "\n" + capitalize("worlD") + "\n" + capitalize("javaScript");
         document.getElementById("output").innerHTML = result;
-
+        
+        
         function lastLetter(str) {
             return str.charAt(str.length - 1);
         }
 
-        const last = lastLetter("Hello") + "\n" + lastLetter("World") + "\n" + lastLetter("JavaScript");
+        const last = "<br/>" + lastLetter("Hello") + "\n" + lastLetter("World") + "\n" + lastLetter("JavaScript");
         document.getElementById("output").innerHTML += last;
     </script>
 </body>
